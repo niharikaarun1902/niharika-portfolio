@@ -1,0 +1,105 @@
+[
+  {
+    "id": "missing-outages",
+    "title": "The Case of Missing Outages",
+    "panels": [
+      {
+        "heading": "The beginning\u2026",
+        "text": "Wait\u2026 where did the outages go? I know there was one yesterday, but it\u2019s missing from the report!"
+      },
+      {
+        "heading": "As the path winds\u2026",
+        "text": "Let\u2019s dig into the SQL. This filter is excluding short outages. That\u2019s why the report looks clean but wrong."
+      },
+      {
+        "heading": "The breakthrough\u2026",
+        "text": "If I tweak the logic and optimize joins, I can fix missing data and speed up load time."
+      },
+      {
+        "heading": "The resolution\u2026",
+        "text": "Outages are visible now, and the report loads fast enough to use in real time."
+      }
+    ],
+    "narrative": "One morning, while reviewing a reporting dashboard, I noticed something felt off. A region that experienced a brief outage showed no record of it. I double-checked the source data and the report logic and still found nothing.\n\nDigging deeper, I found the root cause. Outages under a certain duration were being filtered out, which made the reporting look cleaner but incorrect. On top of that, the report itself was slow and took several minutes to load, which made it hard for teams to use it operationally.",
+    "fix": [
+      "Updated SQL logic to capture outages regardless of duration",
+      "Optimized joins and indexing to improve query performance",
+      "Ensured reporting stayed accurate without adding unnecessary load"
+    ],
+    "impact": [
+      "Missing outages were no longer excluded",
+      "Report performance improved significantly",
+      "More reliable dashboards for faster operational decisions"
+    ]
+  },
+  {
+    "id": "messy-images",
+    "title": "From Messy Images to Decision-Ready Insights",
+    "panels": [
+      {
+        "heading": "The beginning\u2026",
+        "text": "We have hundreds of facility images, but everyone describes issues differently. How do we make this consistent?"
+      },
+      {
+        "heading": "As the path winds\u2026",
+        "text": "Let\u2019s standardize outputs. Every image should produce the same JSON schema so analysis is repeatable."
+      },
+      {
+        "heading": "The breakthrough\u2026",
+        "text": "If we connect web-scraped reference standards with labeling rules and scoring, we can make quality analysis scalable."
+      },
+      {
+        "heading": "The resolution\u2026",
+        "text": "Now each image returns JSON with issue categories and quality signals. The team can compare regions consistently."
+      }
+    ],
+    "narrative": "As the project lead, I realized the biggest blocker was not modeling. It was that we had no consistent way to describe what an image showed. Without standard definitions, two people could look at the same facility condition and label it differently, which made analysis inconsistent.\n\nI pushed the team to treat the output as a decision artifact. We standardized the pipeline so each image generates a structured JSON response. In parallel, we used web scraping to collect reference criteria and used Azure as the backbone for an image quality analysis simulation so we could test scoring logic across scenarios.",
+    "fix": [
+      "Defined a single JSON schema per image for consistent outputs",
+      "Built a workflow connecting web-scraped reference guidelines to labeling rules",
+      "Designed an Azure-based simulation to test image quality scoring at scale",
+      "Added validation checks so outputs stayed stable over time"
+    ],
+    "impact": [
+      "Faster stakeholder review since outputs follow one standard format",
+      "Reduced rework from inconsistent labeling and interpretation",
+      "Easier comparisons across sites and time windows using structured JSON",
+      "Cleaner handoff between data prep, scoring, and dashboards"
+    ]
+  },
+  {
+    "id": "demand-forecasting",
+    "title": "The Day Demand Forecasting Stopped Being Just a Model",
+    "panels": [
+      {
+        "heading": "The beginning\u2026",
+        "text": "We keep seeing shortages at peak times and idle vehicles off-peak. How do we plan better?"
+      },
+      {
+        "heading": "As the path winds\u2026",
+        "text": "Raw rental logs aren\u2019t enough. We need to segment demand by time, seasonality, and conditions."
+      },
+      {
+        "heading": "The breakthrough\u2026",
+        "text": "A forecasting model only matters if it improves decisions. Validate it and connect it to planning scenarios."
+      },
+      {
+        "heading": "The resolution\u2026",
+        "text": "Now forecasts guide fleet allocation and capacity planning, reducing idle capacity and improving availability."
+      }
+    ],
+    "narrative": "In shared mobility, the real problem is not just prediction. It is reducing uncertainty in operational decisions like fleet sizing, deployment, and cost control. A model only matters if it changes how planning happens.\n\nI structured the approach around decision needs. First, identify demand drivers from historical data. Next, segment demand patterns based on conditions. Then build and validate forecasting models so outputs are reliable enough to guide allocation and capacity planning.",
+    "fix": [
+      "Analyzed historical rentals to identify demand drivers",
+      "Segmented demand by time, seasonality, and key conditions",
+      "Built forecasting models and validated reliability with error metrics",
+      "Translated forecasts into planning actions, not just charts"
+    ],
+    "impact": [
+      "Better fleet allocation and improved availability during peak periods",
+      "Improved capacity planning and reduced customer search time",
+      "Reduced idle vehicles and stronger cost control",
+      "Clearer decision support for operations teams"
+    ]
+  }
+]

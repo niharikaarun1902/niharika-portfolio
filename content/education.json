@@ -1,0 +1,24 @@
+[
+  {
+    "id": "purdue-msbaim",
+    "institution": "Purdue University Daniels School of Business",
+    "degree": "Master of Science",
+    "field": "Business Analytics and Information Management",
+    "startDate": "Aug 2025",
+    "endDate": "Dec 2026",
+    "location": "West Lafayette, IN",
+    "logo": "/logos/purdue.png",
+    "_todo": ["Add Purdue logo to public/logos/"]
+  },
+  {
+    "id": "nie-mysore",
+    "institution": "The National Institute of Engineering, Mysore",
+    "degree": "Bachelor of Engineering",
+    "field": "Information Science and Engineering",
+    "startDate": "Aug 2018",
+    "endDate": "Aug 2022",
+    "location": "Mysore, Karnataka, India",
+    "logo": "/logos/nie.png",
+    "_todo": ["Add NIE logo to public/logos/"]
+  }
+]

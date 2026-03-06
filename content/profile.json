@@ -1,0 +1,14 @@
+{
+  "name": "Niharika Arun",
+  "pronouns": "She/Her",
+  "headline": "Purdue MSBAIM · Former Deloitte USI Data Engineer",
+  "tagline": "From analytics to applied AI, I build decision-ready systems.",
+  "summary": "Hi, I'm Niharika Arun, an AI and analytics professional with hands-on experience delivering high-impact data solutions at Deloitte USI for leading U.S. energy clients and a growing focus on LLMs and AI agents for decision support and automation. I engineered 100+ SQL views and stored procedures, cut query execution time by 95%, and built 20+ DBT models in Snowflake to produce trusted datasets, now applying that foundation to build knowledge-based assistants, workflow automations, and performance dashboards.",
+  "location": "West Lafayette, IN, United States",
+  "linkedin": "https://www.linkedin.com/in/niharika-arun",
+  "email": "niharikaarun1902@gmail.com",
+  "avatar": "/avatar.jpg",
+  "_todo": [
+    "Add avatar.jpg to public/"
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "data-engineering",
+    "title": "Data Engineering & Analytics",
+    "skills": [
+      "SQL",
+      "Python",
+      "Snowflake",
+      "DBT",
+      "ETL",
+      "Azure Synapse",
+      "Azure Hyperscale",
+      "BigQuery",
+      "Data Pipelines",
+      "Data Modeling",
+      "Stored Procedures",
+      "Data Lineage"
+    ]
+  },
+  {
+    "id": "ml-ai",
+    "title": "Machine Learning & AI",
+    "skills": [
+      "TensorFlow",
+      "PyTorch",
+      "Computer Vision",
+      "NLP",
+      "Predictive Analytics",
+      "Image Processing",
+      "Model Evaluation",
+      "Deep Learning",
+      "AI Assistants",
+      "Prompt Design",
+      "AI Workflow Design",
+      "Knowledge Based AI"
+    ]
+  },
+  {
+    "id": "tools-collaboration",
+    "title": "Tools & Collaboration",
+    "skills": [
+      "Azure",
+      "Git",
+      "Figma",
+      "Agile",
+      "Stakeholder Management",
+      "Project Management",
+      "ERD Design",
+      "Relational Modeling",
+      "Analytical Storytelling",
+      "API Integration",
+      "Automation Workflows",
+      "Backend Foundations",
+      "Performance Tracking"
+    ]
+  }
+]

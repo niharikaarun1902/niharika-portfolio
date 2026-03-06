@@ -1,0 +1,30 @@
+[
+  {
+    "id": "motto",
+    "label": "From Data to Action",
+    "xPercent": -12,
+    "yPercent": 5,
+    "direction": "left"
+  },
+  {
+    "id": "identity",
+    "label": "Decision Quality Builder",
+    "xPercent": 55,
+    "yPercent": 0,
+    "direction": "right"
+  },
+  {
+    "id": "passion",
+    "label": "AI, Data Enthusiast",
+    "xPercent": -15,
+    "yPercent": 42,
+    "direction": "left"
+  },
+  {
+    "id": "degree",
+    "label": "Master's in Business Analytics",
+    "xPercent": 50,
+    "yPercent": 82,
+    "direction": "right"
+  }
+]

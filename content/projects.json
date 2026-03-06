@@ -1,0 +1,109 @@
+[
+  {
+    "slug": "multimodal-buyer-simulator-agent",
+    "title": "Multimodal Buyer Simulator Agent",
+    "description": "An AI agent that simulates human purchase behavior for e-commerce product selection using a multimodal LLM, structured outputs, and optional retrieval-augmented grounding.",
+    "color": "lavender",
+    "tech": ["Python", "LangChain", "OpenAI API", "Multimodal", "RAG", "Agents"],
+    "problem": "Predicting whether a buyer will purchase a product requires understanding visual appeal, pricing context, and subjective preferences. Traditional rule-based or tabular approaches miss the multimodal reasoning that drives real purchase decisions. The goal was to simulate a buyer's decision process by combining product images, titles, and prices into a single evaluation pass through a multimodal LLM.",
+    "approach": "Built an agent workflow that accepts a product title, price, and image, passes them through a multimodal LLM, and returns a structured purchase probability with rationale. The pipeline optionally retrieves similar historical product examples to ground the agent's reasoning, improving calibration and consistency.",
+    "approachBullets": [
+      "Multimodal LLM evaluates product title, price, and image in a single pass",
+      "Structured output schema enforces purchase_probability and rationale fields",
+      "Optional retrieval of similar historical examples to ground decisions (RAG)",
+      "Prompt evaluation checklist and iterative prompt tuning for consistency",
+      "Caching and reproducibility considerations for repeatable evaluations"
+    ],
+    "stack": ["Python", "LangChain", "OpenAI API", "FAISS", "Pydantic"],
+    "results": [
+      "TODO: add offline evaluation metrics (AUC, Precision@K)",
+      "TODO: add calibration results comparing agent vs. baseline",
+      "TODO: add latency and cost benchmarks per evaluation",
+      "Structured, explainable outputs with purchase probability and reasoning"
+    ],
+    "links": [
+      {"label": "GitHub", "url": "#"},
+      {"label": "Demo", "url": "#"}
+    ],
+    "systemDesign": "Product Input (title + price + image) -> Retriever (FAISS index of historical products) -> Prompt Assembly (product context + retrieved examples + evaluation instructions) -> Multimodal LLM (OpenAI GPT-4o) -> Structured Output Parser (Pydantic schema) -> Decision Output (purchase_probability + rationale)",
+    "nextSteps": [
+      "Run offline evaluation against labeled purchase datasets",
+      "Add calibration analysis comparing predicted probabilities to actual outcomes",
+      "Experiment with different retrieval strategies and embedding models",
+      "Test prompt variations systematically with an evaluation harness",
+      "Explore fine-tuning a smaller model on the structured output format"
+    ],
+    "_todo": ["Add GitHub repo link", "Add demo URL", "Add evaluation metrics"]
+  },
+  {
+    "slug": "mobility-logistics-analytics",
+    "title": "Mobility & Logistics-Adjacent Analytics",
+    "description": "Engineered scalable SQL pipelines to analyze large regional mobility datasets, identifying bottlenecks, efficiency patterns, and growth signals relevant to logistics and operational planning.",
+    "color": "blue",
+    "tech": ["SQL", "BigQuery"],
+    "problem": "Large regional mobility datasets contained hidden patterns around bottlenecks, efficiency, and growth signals that required scalable analytical pipelines to surface actionable insights for logistics and operational planning.",
+    "approach": "Engineered scalable SQL pipelines in BigQuery, performed trend analysis and KPI-style metrics to support data-driven decisions across regions and time periods. Structured queries and outputs for repeatable reporting and future operational analysis.",
+    "stack": ["SQL", "BigQuery"],
+    "results": [
+      "Scalable SQL pipelines for large regional mobility datasets",
+      "Identified bottlenecks, efficiency patterns, and growth signals",
+      "KPI-style metrics supporting data-driven decisions across regions",
+      "Repeatable reporting structure for future operational analysis"
+    ],
+    "links": [],
+    "_todo": ["Add GitHub link or sample queries"]
+  },
+  {
+    "slug": "visual-analytics-operational-assessment",
+    "title": "Visual Analytics – Operational Opportunity Assessment",
+    "description": "Analyzed large-scale datasets to uncover trends and inefficiencies, designing executive-ready visualizations to communicate insights clearly to non-technical stakeholders.",
+    "color": "orange",
+    "tech": ["Power BI", "Data Visualization", "Data Storytelling"],
+    "problem": "Complex analytical findings buried in large-scale datasets were difficult for non-technical stakeholders to understand, slowing down decision-making and obscuring key drivers and opportunity gaps.",
+    "approach": "Analyzed large-scale datasets to uncover trends and inefficiencies. Applied best practices in data storytelling and dashboard design to highlight key drivers and opportunity gaps. Designed executive-ready visualizations that simplify complex findings into intuitive visuals.",
+    "stack": ["Power BI", "Data Visualization", "Data Storytelling"],
+    "results": [
+      "Executive-ready visualizations for non-technical stakeholders",
+      "Uncovered trends and inefficiencies in large-scale datasets",
+      "Faster stakeholder understanding through intuitive dashboard design",
+      "Highlighted key drivers and opportunity gaps"
+    ],
+    "links": [],
+    "_todo": ["Add dashboard screenshots or sample visuals"]
+  },
+  {
+    "slug": "data-mining-predictive-analytics",
+    "title": "Data Mining – Predictive Analytics Project",
+    "description": "Performed advanced data cleaning, feature engineering, and trend analysis on high-dimensional datasets, building and evaluating predictive models with emphasis on stability and decision relevance.",
+    "color": "pink",
+    "tech": ["Python", "Predictive Modeling", "Feature Engineering"],
+    "problem": "High-dimensional datasets required careful cleaning, feature engineering, and rigorous model evaluation to produce stable, generalizable predictions that could reliably support business decisions.",
+    "approach": "Performed advanced data cleaning, feature engineering, and trend analysis emphasizing model stability, data quality, and decision relevance. Built and evaluated predictive models using cross-validation and performance metrics to ensure generalizability. Documented assumptions, limitations, and findings for transparent analytics.",
+    "stack": ["Python", "Predictive Modeling", "Feature Engineering", "Cross-Validation"],
+    "results": [
+      "Predictive models validated with cross-validation and performance metrics",
+      "Advanced feature engineering on high-dimensional datasets",
+      "Transparent, decision-ready analytics with documented assumptions",
+      "Emphasis on model stability and generalizability"
+    ],
+    "links": [],
+    "_todo": ["Add GitHub link or notebook"]
+  },
+  {
+    "slug": "budgetbite-product-analytics",
+    "title": "BudgetBite – Product & Process Analytics",
+    "description": "Applied data analysis and experimentation techniques to study user behavior, translating insights into measurable improvements in usability and operational efficiency.",
+    "color": "mint",
+    "tech": ["Data Analysis", "Experimentation", "Cohort Analysis", "Product Analytics"],
+    "problem": "Understanding user behavior patterns, engagement drivers, and drop-off points was critical for improving usability and operational efficiency in the BudgetBite product.",
+    "approach": "Applied data analysis and experimentation techniques to study user behavior. Conducted pattern and cohort analysis to identify drivers of engagement and drop-off. Framed analytical insights into product and process recommendations grounded in business impact.",
+    "stack": ["Data Analysis", "Experimentation", "Cohort Analysis", "Product Analytics"],
+    "results": [
+      "Measurable improvements in usability and operational efficiency",
+      "Pattern and cohort analysis revealing engagement drivers and drop-off",
+      "Product and process recommendations grounded in business impact"
+    ],
+    "links": [],
+    "_todo": ["Add case study or results summary"]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "ai-community",
+    "title": "AI Community & Learning",
+    "description": "Active participant in AWAAI (Asian Women Advancing AI) events, exploring responsible AI, conversation design, and strategic AI adoption.",
+    "icon": "brain",
+    "image": "/assets/awaai.jpg"
+  },
+  {
+    "id": "experiential-learning",
+    "title": "Experiential Learning",
+    "description": "Passionate about bridging classroom learning with real-world impact through programs like The Data Mine at Purdue.",
+    "icon": "rocket",
+    "images": ["/assets/datamine-team.jpg", "/assets/cnh-museum.jpg"]
+  }
+]

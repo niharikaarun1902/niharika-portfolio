@@ -1,0 +1,20 @@
+[
+  {
+    "id": "azure-data-engineer",
+    "title": "Microsoft Certified: Azure Data Engineer Associate",
+    "issuer": "Microsoft",
+    "issuedDate": "May 2023",
+    "expiryDate": "May 2024",
+    "credentialUrl": "",
+    "_todo": ["Add credential URL"]
+  },
+  {
+    "id": "azure-data-fundamentals",
+    "title": "Microsoft Certified: Azure Data Fundamentals",
+    "issuer": "Microsoft",
+    "issuedDate": "Apr 2023",
+    "expiryDate": null,
+    "credentialUrl": "",
+    "_todo": ["Add credential URL", "LinkedIn mentions 12 total certifications – add remaining ones"]
+  }
+]

@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #FBFBF8;
+  --surface: #FFFFFF;
+  --text: #1F2937;
+  --muted: #4B5563;
+  --border: #E5E7EB;
+
+  --pastel-blue: #DCEBFF;
+  --pastel-pink: #FFE1EC;
+  --pastel-orange: #FFE7CC;
+  --pastel-mint: #DDF6E6;
+  --pastel-lavender: #ECE7FF;
+
+  --primary: #FFB36B;
+  --link: #2563EB;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
+  --color-pastel-blue: var(--pastel-blue);
+  --color-pastel-pink: var(--pastel-pink);
+  --color-pastel-orange: var(--pastel-orange);
+  --color-pastel-mint: var(--pastel-mint);
+  --color-pastel-lavender: var(--pastel-lavender);
+
+  --color-primary: var(--primary);
+  --color-link: var(--link);
+
+  --font-heading: var(--font-fraunces);
+  --font-body: var(--font-inter);
+  --font-comic: var(--font-comic);
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.06);
+  --radius-card: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+::selection {
+  background: var(--pastel-orange);
+  color: var(--text);
+}
+
+.comic-card {
+  border: 4px solid var(--text);
+  border-radius: 12px;
+  box-shadow: 6px 6px 0 var(--text);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.comic-card:hover {
+  box-shadow: 8px 8px 0 var(--text);
+  transform: translate(-1px, -1px);
+}
+
+.comic-bubble {
+  border: 2.5px solid var(--text);
+  border-radius: 14px;
+  padding: 8px 16px;
+  box-shadow: 3px 3px 0 var(--text);
+}
+
+.comic-text {
+  font-family: var(--font-comic), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+/* Comic panel styles */
+.comic-panel {
+  border: 3px solid var(--text);
+  border-radius: 8px;
+  background: #FFF9E0;
+  position: relative;
+  overflow: visible;
+}
+
+.comic-panel-label {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  background: var(--text);
+  color: #FFF9E0;
+  font-family: var(--font-comic), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  padding: 3px 12px;
+  border-radius: 6px 0 6px 0;
+  line-height: 1.3;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #fff;
+  border: 2.5px solid var(--text);
+  border-radius: 18px;
+  padding: 10px 14px;
+  font-family: var(--font-comic), system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  filter: drop-shadow(0 2px 0 var(--text));
+}
+
+.thought-bubble {
+  position: relative;
+  background: #fff;
+  border: 2.5px solid var(--text);
+  border-radius: 22px;
+  padding: 10px 14px;
+  font-family: var(--font-comic), system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.thought-bubble::after {
+  content: "○ ○";
+  position: absolute;
+  bottom: -18px;
+  left: 18px;
+  font-size: 0.55rem;
+  letter-spacing: 3px;
+  color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

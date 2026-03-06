@@ -1,0 +1,83 @@
+[
+  {
+    "id": "agreliant-consultant",
+    "title": "Business Analytics Consultant",
+    "company": "AgReliant Genetics (GDM)",
+    "type": "Consulting",
+    "startDate": "Jan 2026",
+    "endDate": "Present",
+    "location": "West Lafayette, IN",
+    "bullets": [
+      "Designing a decision-support simulation tool to evaluate production volume strategies and forecast inventory obsolescence risk.",
+      "Modeling multi-year business outcomes using historical data and scenario analysis in Python/R and Excel.",
+      "Enabling data-driven production planning by translating simulation outputs into actionable insights for business stakeholders.",
+      "Collaborating with business stakeholders in an agile consulting environment, delivering executive-ready insights."
+    ],
+    "skills": ["Python", "R", "Excel", "Simulation", "Scenario Analysis"]
+  },
+  {
+    "id": "data-mine-team-lead",
+    "title": "Team Lead, CNH Industrial Project",
+    "company": "The Data Mine (Purdue University)",
+    "type": "Part-time",
+    "startDate": "Jan 2026",
+    "endDate": "Present",
+    "location": "West Lafayette, IN",
+    "bullets": [
+      "Leading a client-sponsored analytics consulting project using ML-based image analysis to assess facility conditions and compliance.",
+      "Translating business requirements into scalable computer vision analytics solutions, reducing reliance on manual inspections.",
+      "Defining data standards, quality checks, and evaluation metrics to ensure reliable, reproducible investment insights.",
+      "Coordinating a cross-functional team and aligning deliverables with client business objectives and timelines.",
+      "Driving project scoping and stakeholder alignment to ensure AI-enabled analytics deliver measurable business value."
+    ],
+    "skills": ["Machine Learning", "Computer Vision", "Python", "Data Pipelines", "Stakeholder Management"]
+  },
+  {
+    "id": "deloitte-analyst",
+    "title": "Analyst",
+    "company": "Deloitte USI",
+    "type": "Full-time",
+    "startDate": "Jan 2023",
+    "endDate": "Jun 2025",
+    "location": "Bengaluru, Karnataka, India",
+    "bullets": [
+      "Built scalable data models and analytics solutions for energy-sector clients, enabling reporting, forecasting, and strategic decision-making across large operational datasets.",
+      "Designed and optimized high-performance SQL pipelines and transformations using SQL and Python, improving reporting efficiency by 95% and accelerating access to trusted insights.",
+      "Conducted exploratory analysis, trend analysis, KPI monitoring, and root-cause investigations to identify performance drivers, risks, and optimization opportunities.",
+      "Developed executive-ready dashboards and reporting in Power BI and Excel, translating complex findings into clear, actionable recommendations for business and product teams.",
+      "Partnered with stakeholders to gather, document, and validate business requirements, turning ambiguous needs into well-defined analytical outputs and measurable deliverables.",
+      "Drove analytics standardization and process improvement efforts to improve data quality, consistency, and reproducibility across teams and reporting layers.",
+      "Collaborated in cross-functional agile teams with consultants, product managers, and engineers to deliver end-to-end analytics solutions aligned with client objectives.",
+      "Completed Deloitte's AI/ML Analyst Program, applying experimentation and Python-based modeling techniques to real-world analytics and automation use cases."
+    ],
+    "skills": ["SQL", "Python", "Azure Synapse", "Snowflake", "DBT", "ETL", "Data Modeling", "Power BI", "Excel"]
+  },
+  {
+    "id": "mps-intern",
+    "title": "Data Science Intern",
+    "company": "MPS Interactive Systems",
+    "type": "Internship",
+    "startDate": "Aug 2021",
+    "endDate": "Sep 2021",
+    "location": "Mumbai, Maharashtra, India",
+    "bullets": [
+      "Designed machine learning models for automated scoring systems, achieving 83% accuracy through feature engineering & tuning.",
+      "Compared NLP approaches & recommended optimal solutions based on performance, scalability & business needs."
+    ],
+    "skills": ["Machine Learning", "NLP", "Feature Engineering"]
+  },
+  {
+    "id": "beml-intern",
+    "title": "Data Science Intern",
+    "company": "BEML Pvt. Ltd",
+    "type": "Internship",
+    "startDate": "Dec 2020",
+    "endDate": "Feb 2021",
+    "location": "Bengaluru, Karnataka, India",
+    "bullets": [
+      "Researched and implemented computer vision techniques, recommending the LBPH model to improve recognition accuracy by 87%.",
+      "Built Python-based proof-of-concepts integrating OpenCV with real-time data streams to demonstrate technical feasibility."
+    ],
+    "skills": ["Computer Vision", "Python", "OpenCV"]
+  }
+]
