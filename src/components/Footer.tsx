@@ -1,4 +1,5 @@
 import { getProfile } from "@/lib/content";
+import { assetUrl } from "@/lib/assets";
 
 export default function Footer() {
   const profile = getProfile();
@@ -22,7 +23,8 @@ export default function Footer() {
             </a>
           )}
           <a
-            href="/resume"
+            href={assetUrl("/assets/Niharika-Arun-Resume.pdf")}
+            download
             className="text-xs text-muted underline-offset-2 hover:text-link hover:underline"
           >
             Resume

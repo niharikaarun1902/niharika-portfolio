@@ -2,6 +2,7 @@ import { existsSync } from "fs";
 import path from "path";
 import Link from "next/link";
 import { getProfile, getExperience, getEducation, getCertifications } from "@/lib/content";
+import { assetUrl } from "@/lib/assets";
 
 export const metadata = {
   title: "Resume – Niharika Arun",
@@ -13,7 +14,7 @@ export default function ResumePage() {
   const experience = getExperience();
   const education = getEducation();
   const certifications = getCertifications();
-  const pdfExists = existsSync(path.join(process.cwd(), "public", "resume.pdf"));
+  const pdfExists = existsSync(path.join(process.cwd(), "public", "assets", "Niharika-Arun-Resume.pdf"));
 
   return (
     <div className="min-h-screen bg-bg">
@@ -27,7 +28,7 @@ export default function ResumePage() {
           </Link>
           {pdfExists ? (
             <a
-              href="/resume.pdf"
+              href={assetUrl("/assets/Niharika-Arun-Resume.pdf")}
               download
               className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-text transition-transform hover:scale-[1.03]"
             >
