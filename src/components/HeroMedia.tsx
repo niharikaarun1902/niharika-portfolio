@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import type { HeroCallout } from "@/types/content";
+import { assetUrl } from "@/lib/assets";
 
 const BUBBLE_COLORS = [
   "bg-pastel-pink border-pastel-pink",
@@ -97,7 +98,7 @@ export default function HeroMedia({ callouts }: Props) {
       >
         <div className="h-full w-full overflow-hidden rounded-[8px]">
           <img
-            src="/assets/hero-photo.jpg"
+            src={assetUrl("/assets/hero-photo.jpg")}
             alt="Niharika Arun"
             className="h-full w-full object-cover"
             style={{ objectPosition: "center 30%" }}

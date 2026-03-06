@@ -2,6 +2,7 @@
 
 import { useState, type ReactNode } from "react";
 import type { Interest } from "@/types/content";
+import { assetUrl } from "@/lib/assets";
 
 const ICON_MAP: Record<string, ReactNode> = {
   brain: (
@@ -147,7 +148,7 @@ export default function InterestCard({
             {imgs.map((src, i) => (
               <div key={i} className="relative overflow-hidden">
                 <img
-                  src={src}
+                  src={assetUrl(src)}
                   alt={`${interest.title} ${i + 1}`}
                   className="h-full w-full object-cover"
                 />
@@ -165,7 +166,7 @@ export default function InterestCard({
       accentClass={accentClass}
       backContent={
         <img
-          src={interest.image!}
+          src={assetUrl(interest.image!)}
           alt={interest.title}
           className="h-full w-full object-cover"
         />
